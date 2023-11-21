@@ -54,6 +54,6 @@ class MailHandler:
 
 # Here you start the actual server, hostname is your PRIVATE ipv4, and port has to be 25
 # Change it to your actual local ipv4 or use localhost
-controller = Controller(MailHandler(), hostname='192.168.10.10', port=25)
+controller = Controller(MailHandler(), hostname='localhost', port=25)
 controller.start()
 asyncio.get_event_loop().run_forever()
